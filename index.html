@@ -9,14 +9,23 @@
 </head>
 <body><main>
 <h1>Deep Empire: Mineral Valley</h1>
-<p class="small">Developer / Разработчик: Linaks Lab · Package: com.linakslab.deepempire.game · Updated / Обновлено: 23 October 2026</p>
+<p class="small">Developer / Разработчик: Linaks Lab · Package: com.linakslab.deepempire.game · Updated / Обновлено: 8 November 2026</p>
 <nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
 
 <section id="ru" lang="ru"><h2>Политика конфиденциальности</h2>
 <p>Настоящая политика описывает обработку данных в игре Deep Empire: Mineral Valley («Игра», пакет <strong>com.linakslab.deepempire.game</strong>), разработчик — Linaks Lab («мы»). Контакт по вопросам конфиденциальности: <strong>linakslab@gmail.com</strong>.</p>
 
 <h2>1. Игровые данные</h2>
-<p>Игра не требует регистрации и не запрашивает имя, email, телефон, контакты, фото или точное местоположение. Игровой прогресс и настройки (монеты, уровни, улучшения, звук) хранятся только на вашем устройстве и не передаются разработчику. Мы не используем собственных серверов, аналитики или облачных сохранений.</p>
+<p>Игра не требует регистрации и не запрашивает email, телефон, контакты, фото или точное местоположение. Игровой прогресс и настройки хранятся на вашем устройстве. Если вы вошли в <strong>Google Play Игры</strong>, копия сохранения хранится в вашем аккаунте Google Play Игр (облачное сохранение), чтобы прогресс можно было перенести на другой телефон.</p>
+<h2>1а. Онлайн-функции (чат, профили, почта, промокоды)</h2>
+<p>Для чата, профилей игроков, подарков и промокодов Игра использует сервис <strong>Google Firebase</strong> (Firestore, Authentication, Cloud Functions, App Check). При первом запуске автоматически создаётся <strong>анонимный аккаунт Firebase</strong> — случайный идентификатор без имени и email. На сервере хранятся:</p>
+<ul>
+<li>идентификатор игрока и выбранный вами ник (или автоматический «Шахтёр-XXXX»);</li>
+<li>публичный профиль: уровень, текущий мир, число горизонтов, доход, достижения, аватар и шлем, статусы VIP/MINER, дата начала игры, версия игры, время последнего входа;</li>
+<li>сообщения, которые вы пишете в общий чат (их видят другие игроки), и жалобы на сообщения;</li>
+<li>отметки «симпатия», полученные подарки и использованные промокоды.</li>
+</ul>
+<p>Ник, профиль и сообщения чата видны другим игрокам. Не пишите в чат личные данные. Модераторы могут удалять сообщения и ограничивать нарушителей. Для защиты от поддельных клиентов используется Google Play Integrity / Firebase App Check.</p>
 
 <h2>2. Реклама (Google AdMob)</h2>
 <p>Игра показывает рекламу с вознаграждением через сервис <strong>Google AdMob</strong> (Google LLC). Ролик показывается только после того, как вы сами нажмёте кнопку «за рекламу» (например, ×2 офлайн-доход, дополнительная прокрутка колеса, сундук, бустер или кристаллы). Для показа, измерения и защиты рекламы от мошенничества Google Mobile Ads SDK может автоматически собирать и обрабатывать:</p>
@@ -36,13 +45,13 @@
 <p>Для отображения текста Игра может загружать шрифты с сервиса Google Fonts. При этом Google получает технические данные запроса (например, IP-адрес) согласно своей политике конфиденциальности.</p>
 
 <h2>5. Покупки</h2>
-<p>В Игре можно купить кристаллы, VIP-статус, отключение рекламы, Miner Pass, ускорители и легендарных менеджеров через <strong>Google Play Billing</strong>. Оплату полностью проводит Google Play: мы не получаем и не храним данные банковских карт и платёжные реквизиты. Игра получает от Google Play только подтверждение покупки (идентификатор товара и токен покупки), чтобы выдать награду и восстановить постоянные покупки. Возвраты осуществляются по правилам Google Play.</p>
+<p>В Игре можно купить кристаллы, VIP-статус, отключение рекламы, Miner Pass, ускорители и легендарных менеджеров через <strong>Google Play Billing</strong>. Оплату полностью проводит Google Play: мы не получаем и не храним данные банковских карт и платёжные реквизиты. Игра получает от Google Play только подтверждение покупки (идентификатор товара и токен покупки), чтобы выдать награду и восстановить постоянные покупки. Для глобальных ускорителей токен покупки проверяется нашей серверной функцией (Firebase Cloud Functions) через Google Play и сохраняется, чтобы одну покупку нельзя было использовать дважды. Возвраты осуществляются по правилам Google Play.</p>
 
 <h2>6. Передача третьим лицам</h2>
-<p>Мы не продаём персональные данные. Данные, перечисленные в разделе 2, получает только Google (AdMob) для показа и измерения рекламы и предотвращения мошенничества; платежи обрабатывает Google Play (раздел 5). Других получателей нет.</p>
+<p>Мы не продаём персональные данные. Данные, перечисленные в разделе 2, получает Google (AdMob) для показа и измерения рекламы и предотвращения мошенничества; онлайн-данные (раздел 1а) хранятся в Google Firebase, облачное сохранение — в Google Play Играх; платежи обрабатывает Google Play (раздел 5). Других получателей нет. Все данные передаются в зашифрованном виде (HTTPS).</p>
 
 <h2>7. Хранение и удаление</h2>
-<p>Игровые данные хранятся на устройстве до очистки данных приложения или его удаления. Данные, собранные Google, хранятся по правилам Google; управлять ими можно в аккаунте Google и в настройках рекламы Android. Вы можете написать нам на linakslab@gmail.com с любым вопросом о данных.</p>
+<p>Игровые данные хранятся на устройстве до очистки данных приложения или его удаления. Онлайн-профиль и сообщения хранятся, пока существует ваш аккаунт; сообщения чата могут удаляться автоматически и модераторами. <strong>Удаление данных:</strong> напишите на <strong>linakslab@gmail.com</strong> с темой «Удаление данных» и укажите ваш ник и ID игрока (он показан в вашем профиле в игре: «Твой ID»). Мы удалим профиль, сообщения и связанные онлайн-данные в течение 30 дней; записи о проверенных покупках могут храниться дольше, если это нужно для защиты от мошенничества и по закону. Облачное сохранение удаляется в приложении Google Play Игры. Данные, собранные Google, хранятся по правилам Google.</p>
 
 <h2>8. Дети</h2>
 <p>Игра не предназначена для детей младше 13 лет. Мы сознательно не собираем данные детей. Если вы считаете, что ребёнок передал нам данные, напишите нам, и мы примем меры.</p>
@@ -58,7 +67,16 @@
 <p>This policy describes data handling in Deep Empire: Mineral Valley (the “Game”, package <strong>com.linakslab.deepempire.game</strong>), developed by Linaks Lab (“we”). Privacy contact: <strong>linakslab@gmail.com</strong>.</p>
 
 <h2>1. Game data</h2>
-<p>The Game requires no registration and does not ask for your name, email, phone number, contacts, photos or precise location. Game progress and settings are stored only on your device and are not sent to the developer. We do not operate our own servers, analytics or cloud saves.</p>
+<p>The Game requires no registration and does not ask for your email, phone number, contacts, photos or precise location. Game progress and settings are stored on your device. If you sign in to <strong>Google Play Games</strong>, a copy of your save is kept in your Play Games account (cloud save) so you can move progress to another phone.</p>
+<h2>1a. Online features (chat, profiles, mail, promo codes)</h2>
+<p>Chat, player profiles, gifts and promo codes use <strong>Google Firebase</strong> (Firestore, Authentication, Cloud Functions, App Check). On first launch an <strong>anonymous Firebase account</strong> is created automatically — a random ID with no name or email. The server stores:</p>
+<ul>
+<li>your player ID and the nickname you choose (or an automatic “Шахтёр-XXXX”);</li>
+<li>a public profile: level, current world, number of levels opened, income, achievements, avatar and helmet, VIP/MINER status, start date, game version, last seen time;</li>
+<li>messages you post in the public chat (visible to other players) and reports about messages;</li>
+<li>likes, gifts received and promo codes used.</li>
+</ul>
+<p>Your nickname, profile and chat messages are visible to other players. Do not post personal information in chat. Moderators can remove messages and restrict players who break the rules. Google Play Integrity / Firebase App Check protects the service from modified clients.</p>
 
 <h2>2. Advertising (Google AdMob)</h2>
 <p>The Game shows rewarded ads through <strong>Google AdMob</strong> (Google LLC). An ad is shown only after you tap a “watch ad” button (for example ×2 offline income, an extra wheel spin, a chest, a booster or gems). To serve, measure and protect ads against fraud, the Google Mobile Ads SDK may automatically collect and process:</p>
@@ -78,13 +96,13 @@
 <p>The Game may load fonts from Google Fonts; Google receives technical request data (such as IP address) under its privacy policy.</p>
 
 <h2>5. Purchases</h2>
-<p>The Game offers gems, VIP status, ad removal, Miner Pass, boosters and legendary managers through <strong>Google Play Billing</strong>. Payments are processed entirely by Google Play; we never receive or store card or payment details. The Game only receives a purchase confirmation (product ID and purchase token) from Google Play to deliver rewards and restore permanent purchases. Refunds follow Google Play's policies.</p>
+<p>The Game offers gems, VIP status, ad removal, Miner Pass, boosters and legendary managers through <strong>Google Play Billing</strong>. Payments are processed entirely by Google Play; we never receive or store card or payment details. The Game only receives a purchase confirmation (product ID and purchase token) from Google Play to deliver rewards and restore permanent purchases. For global boosters the purchase token is verified with Google Play by our server function (Firebase Cloud Functions) and stored so one purchase cannot be used twice. Refunds follow Google Play's policies.</p>
 
 <h2>6. Sharing</h2>
-<p>We do not sell personal data. The data listed in section 2 is received only by Google (AdMob) for ad delivery, measurement and fraud prevention; payments are processed by Google Play (section 5). There are no other recipients.</p>
+<p>We do not sell personal data. The data listed in section 2 is received by Google (AdMob) for ad delivery, measurement and fraud prevention; online data (section 1a) is stored in Google Firebase and cloud saves in Google Play Games; payments are processed by Google Play (section 5). There are no other recipients. All data is encrypted in transit (HTTPS).</p>
 
 <h2>7. Retention and deletion</h2>
-<p>Game data stays on the device until you clear the app's data or uninstall it. Data collected by Google is retained under Google's policies and can be managed in your Google account and Android ad settings. Contact linakslab@gmail.com with any data question.</p>
+<p>Game data stays on the device until you clear the app's data or uninstall it. Your online profile and messages are kept while your account exists; chat messages may be removed automatically or by moderators. <strong>Data deletion:</strong> email <strong>linakslab@gmail.com</strong> with the subject “Data deletion” and include your nickname and player ID (shown in your in-game profile as “Твой ID”). We delete your profile, messages and related online data within 30 days; records of verified purchases may be kept longer where needed for fraud prevention or by law. Cloud saves can be deleted in the Google Play Games app. Data collected by Google is retained under Google's policies.</p>
 
 <h2>8. Children</h2>
 <p>The Game is not directed to children under 13. We do not knowingly collect children's data; contact us if you believe a child has provided data.</p>
